@@ -67,7 +67,6 @@ class DatabaseHelper {
       'prodi': prodi,
       'email': email,
       'notelp': notelp,
-      'created_at': DateTime.now().toIso8601String(),
     };
   }
 
@@ -182,38 +181,6 @@ class DatabaseHelper {
     } catch (e) {
       print('Error updating mahasiswa: $e');
       return false;
-    }
-  }
-
-  // Hapus semua data
-  static Future<bool> clearAllData() async {
-    try {
-      final db = await database;
-      await db.delete(_tableMahasiswa);
-      return true;
-    } catch (e) {
-      print('Error clearing all data: $e');
-      return false;
-    }
-  }
-
-  // Cari mahasiswa berdasarkan NIM
-  static Future<Map<String, dynamic>?> getMahasiswaByNim(String nim) async {
-    try {
-      final db = await database;
-      List<Map<String, dynamic>> result = await db.query(
-        _tableMahasiswa,
-        where: 'nim = ?',
-        whereArgs: [nim],
-      );
-      
-      if (result.isNotEmpty) {
-        return result.first;
-      }
-      return null;
-    } catch (e) {
-      print('Error getting mahasiswa by NIM: $e');
-      return null;
     }
   }
 }
