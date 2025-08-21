@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+Download App :https://github.com/FathanRasyidi/KampusKu/releases/tag/release
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
