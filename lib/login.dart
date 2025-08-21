@@ -102,7 +102,17 @@ class LoginScreen extends StatelessWidget {
                       }
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Silahkan masukkan email dan kata sandi')),
+                      SnackBar(
+                        content: RichText(
+                          text: TextSpan(
+                            style: TextStyle(color: Colors.white),
+                            children: [
+                              TextSpan(text: 'Silahkan masukkan email dan kata sandi. \n'),
+                              TextSpan(text: 'Email: admin, Password: jmp', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green.shade200)),
+                            ],
+                          ),
+                        ),
+                      ),
                     );
                   }
                 },
