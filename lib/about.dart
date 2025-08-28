@@ -9,7 +9,7 @@ class AboutPage extends StatelessWidget {
       backgroundColor: Colors.blue.shade50,
       appBar: AppBar(
         title: Text(
-          'Tentang Aplikasi',
+          'Tentang Diriku',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.blue,
