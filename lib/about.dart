@@ -21,22 +21,13 @@ class AboutPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Aplikasi KampusZaki merupakan aplikasi yang digunakan untuk pendataan mahasiswa.',
+              'Aplikasi KampusKu merupakan aplikasi yang digunakan untuk pendataan mahasiswa.',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.grey,
                 fontStyle: FontStyle.italic,
               ),
             ),
-            Text(
-              'Push zaki.',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.grey,
-                fontStyle: FontStyle.italic,
-              ),
-            ),
-
             SizedBox(height: 16),
             Text(
               'Versi 1.0.0',
