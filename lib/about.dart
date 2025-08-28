@@ -28,6 +28,14 @@ class AboutPage extends StatelessWidget {
                 fontStyle: FontStyle.italic,
               ),
             ),
+            Text(
+              'Push zaki.',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
 
             SizedBox(height: 16),
             Text(
